@@ -74,3 +74,12 @@ ros2 run turtle_walker controller
  # The recording will end abruptly
  ros2 launch turtle_walker turtulebot3_gazebo_controller.launch.py replay_only:='True' bag_file:='./src/turtle_walker/results/recorder1670134485.9357378.bag/'
  ```
+
+ To only inspect the bag file
+ ```bash
+ ros2 bag info ./src/turtle_walker/results/recorder1670134485.9357378.bag/
+
+ # And to play it
+
+ ros2 bag play ./src/turtle_walker/results/recorder1670134485.9357378.bag/
+ ```
