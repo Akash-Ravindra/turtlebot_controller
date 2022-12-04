@@ -27,10 +27,10 @@
  * SOFTWARE.
  *
  */
-#ifndef CONTROLLER_HPP_
-#define CONTROLLER_HPP_
+#ifndef TURTLE_WALKER_INCLUDE_TURTLE_WALKER_CONTROLLER_HPP_
+#define TURTLE_WALKER_INCLUDE_TURTLE_WALKER_CONTROLLER_HPP_
 #include <chrono>
-
+#include <string>
 #include "geometry_msgs/msg/twist.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
@@ -43,7 +43,7 @@ class Walker : public rclcpp::Node {
  public:
   /// @brief Constructor for the Walker class
   /// @param name
-  Walker(std::string name);
+  explicit Walker(std::string name);
   /// @brief Destructor for the Walker class
   ~Walker();
   /// @brief Callback function for the laser scan subscriber
@@ -77,4 +77,4 @@ class Walker : public rclcpp::Node {
 };
 };  // namespace walker
 
-#endif /* CONTROLLER_HPP_ */
+#endif  // TURTLE_WALKER_INCLUDE_TURTLE_WALKER_CONTROLLER_HPP_
