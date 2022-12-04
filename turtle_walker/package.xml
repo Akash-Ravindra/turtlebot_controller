@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>Turtlebot 3 wall avoidance controller</description>
   <maintainer email="akash.ravindra@gmail.com">eurus</maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT License</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
